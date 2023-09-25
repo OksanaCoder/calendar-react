@@ -1,0 +1,27 @@
+.menu {
+    width: 200px;
+    background: rgb(241, 92, 92);
+    position: absolute;
+    left: -200px;
+    top: 0;
+    bottom: 0;
+    transition: left 0.5s;
+    z-index: 100;
+    ul { 
+        position: relative;
+        padding: 0;
+        li {
+            padding: 10px 30px ;
+            &:hover {
+                background-color: rgb(252, 159, 159);
+            }
+        }
+    }
+}
+.close {
+    position: absolute;
+    right: 10px;
+}
+.menuOpen {
+    left: 0;
+}

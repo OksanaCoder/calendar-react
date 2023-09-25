@@ -11,3 +11,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
+.burger {
+  display: block;
+}
+.burger-none {
+  display: none;
+}
