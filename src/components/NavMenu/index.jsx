@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import cx from "classnames";
 import styles from "./NavMenu.module.scss";
+import MenuContext from "../../context/menuContext";
 
-const NavMenu = ({ open, handleClose }) => {
+const NavMenu = () => {
+  const [state, handleClose] = useContext(MenuContext);
   const classNames = cx(styles.menu, {
-    [styles.menuOpen]: open
+    [styles.menuOpen]: state.isOpened
   });
   return (
     <div className={classNames}>
